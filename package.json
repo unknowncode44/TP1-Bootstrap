@@ -1,0 +1,11 @@
+{
+  "name": "tp1-bootstrap",
+  "version": "1.0.0",
+  "description": "Trabajo Practico #1 Desarrollo de Software 2, TSDS ITS, Profesor Javier Parra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matias Orellana",
+  "license": "MIT"
+}

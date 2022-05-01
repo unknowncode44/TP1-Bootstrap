@@ -1,0 +1,108 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.custom-wrapper {
+    margin: 0;
+    min-width: 100%;
+}
+
+.custom-logo-container {
+    position: relative;
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    font-size: 60px;
+    color: azure;
+}
+
+.c-name {
+    display: flex;
+}
+
+.l-left,
+.l-center
+ {
+  z-index: 10;
+  position: relative;
+  width: 20px;
+  height: 40px;
+  overflow: hidden;
+  color: azure;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  transition: width 0.4s 0.1s;
+  
+}
+
+.l-right {
+    z-index: 10;
+  position: relative;
+  width: 70px;
+  height: 60px;
+  overflow: hidden;
+  color: azure;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  transition: width 0.4s 0.1s;
+}
+ 
+.l-right:hover,
+.l-center,
+.l-left:hover {
+  transition: width 0.4s 0.1s;
+}
+
+.l-left:hover {
+    width: 80px;
+}
+
+.l-center:hover {
+    width: 100px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    animation: 1.5s bounce ease infinite;
+    cursor: pointer;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(3px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+
+.aside {
+    background-color: blueviolet;
+    min-height: 100vh;
+    border-radius: 10px;
+}
+
+.custom-logo-container {
+    max-height: 25px !important;
+}
+
+.brand-custom {
+    font-family: 'Rubik', cursive;
+    color: azure;
+    font-size: 24px;
+    max-height: 32px;
+    margin-bottom: 0;
+    line-height: 75%;
+}
