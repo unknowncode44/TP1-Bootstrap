@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+
+
     <!-- importamos libreria Bootstrap -->
     <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
     
@@ -19,56 +21,159 @@
     <!-- importamos los scripts de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- Importamos los icons de Ionic -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <!-- fullpage.js -->
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css"/>
+    <script type="text/javascript" src="./js/fullpage.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
+
     <title>TP-1</title>
 </head>
 
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <div class="col-sm-3 text-center p-0 mt-1 custom-logo-container">
-        <a class="navbar-brand" href="#">
-            
-        </a>
-    </div>
+    <div class="container m-0 p-0 bg-* custom-wrapper">
+        <div class="row custom-nav bg-* pt-2">
+            <!-- BRAND -->
+            <div class="col-md-3">
+                <div class="l-left">
+                    <span class="my-0">HighValleyDevs></span>
+                </div>
+            </div>
+            <div class="col-md-5"></div>
 
-    <div class="collapse navbar-collapse mt-1" id="navbarColor01">
-
-      
-    </div>
-  </div>
-</nav>
-    <div class="container m-0 p-0 custom-wrapper">
-        <div class="row p-0 m-0">
-            <div class="col-lg-3 p-0 bg-dark my-1 aside">
-                <div class="custom-container py-2 px-2 text-center">
-                    <div class="c-name">
-                        <div class="l-left">
-                            <span>H</span>
-                            <span id="name">igh</span>
-                        </div>
-                        <div class="l-center">
-                            <span>V</span>
-                            <span id="name">alley</span>
-                        </div>
-                        <div class="l-right">
-                            <span>Devs</span>
-                        </div>
-                        <div class="arrow py-4">
-                            <i id="arrow" class="fa fa-angle-right"></i>
+            <!-- HOME -->
+            <div class="col-md-1 p-0">
+                <a href="#home" class="border-0 p-0 bg-*">
+                    <div class="row">
+                        <div class="col-md-12 text-center p-0">
+                            <ion-icon class="aside-icons" name="home-outline"></ion-icon>
                         </div>
                     </div>
-                </div>
-                <div class="list-group mt-5">
-                    <a href="#" class="list-group-item border-0 list-group-item-action">Cras justo odio</a>
-                    <a href="#" class="list-group-item border-0 list-group-item-action">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item border-0 list-group-item-action">Morbi leo risus</a>
-                  </div>
+                </a>
             </div>
-            <div class="col-lg-9 p-0 content">
-                <ul><li>1</li></ul>
+
+            <!-- PRODUCTS -->
+            <div class="col-md-1 p-0">
+                <a href="#products" class="border-0 p-0 bg-*">
+                    <div class="row">
+                        <div class="col-md-12 text-center p-0">
+                            <ion-icon class="aside-icons" name="bag-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
             </div>
+
+            <!-- SERVICES -->
+            <div class="col-md-1 p-0">
+                <a href="#services" class="border-0 p-0 bg-*">
+                    <div class="row">
+                        <div class="col-md-12 text-center p-0">
+                            <ion-icon class="aside-icons" name="qr-code-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="col-md-1 p-0">
+                <a href="#about" class="border-0 p-0 bg-*">
+                    <div class="row">
+                        <div class="col-md-12 text-center p-0">
+                            <ion-icon class="aside-icons" name="code-slash-outline"></ion-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
+            <div class="col-lg-12 p-0 content">
+                
+                <div id="fullpage">
+
+                    <div class="section header-section">
+                        <div class="header-custom-section">
+                            <div class="header-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="custom-header-card card text-start px-3 py-2">
+                                            <h3 class="card-title">HV Devs</h3><br>
+                                            <h4 class="card-subtitle mb-2 text-muted">Developing desde el Alto Valle RNyNQN</h4>
+                                            <p class="card-text">HV Devs es una empresa de Neuquen y Rio Negro orientada al desarrollo 
+                                            de software de calidad para pequeños y medianos emprendedores.</p><br>
+                                            <p class="card-text">Ofrecemos soluciones que colaboran a informatizar y digitalizar tus emprendimientos
+                                                usando tecnologias de punta para innovar en cualquier mercado.
+                                            </p><br>
+                                            <p>No dudes en consultar para conocer nuestros servicios!</p>
+                                            <div class="card-footer-center">
+                                                <a href="#">Conocer mas</a>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <div class="rocket">
+                                            <img src="./assets/rocket.png" alt="">
+                                            <div class="custom-burst custom-burst-blur"></div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section products-section" id="">
+                        
+                        <div class="slide">
+                            <div class="container p-4">
+                                <div class="row">
+                                    <div class="col-md-12 p-0">
+                                        <div class="products-slide">
+                                            <div class="row">
+                                                <div class="col-md-8 p-3 product-text">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title product-text-title">Diseño y desarrollo web</h3>
+                                                        <h4 class="card-subtitle product-text-subtitle mb-2 text-muted">Landing Pages & WebApps</h4>
+                                                        <p class="card-text product-text-text">
+                                                            Te ofrecemos la creacion y el mantenimiento de la web de tu emprendimiento. Creamos soluciones que te ayudaran en la gestion de tu negocio y la atencion a tus clientes.
+                                                        </p>
+                                                        <h5 class="card-subtitle product-text-subtitle mb-2 text-muted">
+                                                            Entre nuestros productos podras encontrar:
+                                                        </h5>
+                                                        <ul>
+                                                            <li><strong>Landing page informativa</strong>, para presentar tu emprendimiento, y tambien difundir tus medios de comunicacion.</li>
+                                                        </ul>
+
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                      </div>
+                                                </div>
+                                                <div class="col-md-4 px-4 py-4 text-center align-middle">
+                                                    <img width="100%" src="https://www.pngmart.com/files/7/Web-Design-Transparent-Images-PNG.png" alt="">
+                                                </div>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide"> </div>
+                        <div class="slide"> </div>
+                        <div class="products-bottom-overlay"></div>
+                    </div>
+                    <div class="section" id=""></div>
+                    <div class="section" id=""></div>
+                </div>
+            </div>
+
+
     </div>
+    <script type="module" src="./js/index.js"></script>  
 </body>
 </html>
