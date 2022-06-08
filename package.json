@@ -9,6 +9,7 @@
   "author": "Matias Orellana",
   "license": "MIT",
   "dependencies": {
-    "fullpage.js": "^4.0.8"
+    "fullpage.js": "^4.0.8",
+    "rxjs": "^7.5.5"
   }
 }

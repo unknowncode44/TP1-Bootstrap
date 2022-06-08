@@ -109,7 +109,7 @@
                                         </p><br>
                                         <p>No dudes en consultar para conocer nuestros servicios!</p>
                                         <div class="card-footer-center">
-                                            <a href="#">Conocer mas</a>
+                                            <a href="#" id="">Conocer mas</a>
 
                                         </div>
 
@@ -204,7 +204,8 @@
 
                                                         <!-- Landing Page -->
                                                         <li class="list-group-item li-custom-list">
-                                                            <strong>Landing page informativa</strong>, para presentar tu emprendimiento, y tambien difundir tus medios de comunicacion. Te la diseñamos a medida, tal y como siempre la soñaste!
+                                                            <strong>Diseño de Interfaz de Usuario (UI)</strong>, Te diseñamos tu app como la necesites, usando los mejores paquetes y las mejores practicas para que quede genial. Tambien armamos tu modelos
+                                                            de datos, y estructuramos la navegacion entre pantallas.
                                                         </li>
 
                                                         <!-- E-Commerce -->
@@ -239,7 +240,55 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide"> </div>
+                    <div class="slide">
+                        <div class="container p-4 mt-4">
+                            <div class="row">
+                                <div class="col-md-12 p-0">
+                                    <div class="products-slide">
+                                        <div class="row">
+                                            <div class="col-md-7 md:col-md-12 p-4 h-100 product-text">
+                                                <div class="card-body h-100">
+                                                    <h3 class="card-title product-text-title">Diseño y desarrollo de aplicaciones moviles</h3>
+                                                    <h4 class="card-subtitle product-text-subtitle mb-2 text-muted">Android & iOS</h4>
+                                                    <p class="card-text product-text-text">
+                                                        Creamos tu app a medida, utilizando tecnologia de punta para que pueda ser utlizada en multiples plataformas
+                                                    </p>
+                                                    <h5 class="card-subtitle product-text-subtitle mb-2 text-muted">
+                                                        Entre nuestros productos podras encontrar:
+                                                    </h5>
+                                                    <div class="accordion-custom">
+                                                        <div class="acc-contentBx" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+                                                            <div class="label">
+                                                                Lista 1
+                                                            </div>
+                                                            <div class="acc-content">
+                                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia pariatur hic velit modi dolorem quae deleniti quaerat similique! Quo dignissimos numquam architecto cupiditate aspernatur doloribus
+                                                                    quis minus, ad adipisci? Aliquid.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="acc-contentBx">
+                                                            <div class="label">
+                                                                Lista 2
+                                                            </div>
+                                                            <div class="acc-content">
+                                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia pariatur hic velit modi dolorem quae deleniti quaerat similique! Quo dignissimos numquam architecto cupiditate aspernatur doloribus
+                                                                    quis minus, ad adipisci? Aliquid.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 text-center product-image-container">
+                                                <img class="product-image" src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="products-bottom-overlay"></div>
                 </div>
                 <div class="section" id=""></div>
@@ -250,6 +299,15 @@
 
     </div>
     <script type="module" src="./js/index.js"></script>
+    <script>
+        const accordion = document.getElementsByClassName('acc-contentBx');
+
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
 </body>
 
 </html>

@@ -50,4 +50,6 @@ function stars() {
     }
 
 }
-stars()
+
+
+stars();

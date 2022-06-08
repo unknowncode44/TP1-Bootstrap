@@ -364,3 +364,48 @@ body {
 .li-custom-list:hover {
     background: rgba(255, 255, 255, 0.15) !important;
 }
+
+.accordion-custom {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5) !important;
+}
+
+.acc-contentBx {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 00.75rem;
+}
+
+.acc-contentBx:hover {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 00.75rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.acc-contentBx .label {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 1rem;
+}
+
+.acc-contentBx .label:before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.acc-contentBx .acc-content {
+    padding: 0.5rem;
+    position: relative;
+    height: 20px;
+    overflow: hidden !important;
+    transition: 0.5s;
+}
+
+.active .acc-content {
+    height: 80px;
+}
