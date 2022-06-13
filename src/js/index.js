@@ -51,5 +51,22 @@ function stars() {
 
 }
 
+function getScreenSize(){
+    let width  = window.screen.width
+    let height = window.screen.height
+
+    console.log(`Ancho: ${width} x Alto: ${height}`);
+}
+
+function resize(){
+    let height = 20
+    let accItem = document.querySelector(".li-custom-list")
+
+    accItem.style.height = height + "px !important";
+}
 
 stars();
+getScreenSize();
+
+
+resize()

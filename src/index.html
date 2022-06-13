@@ -19,10 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- importamos los scripts de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+   
+   
     <!-- Importamos los icons de Ionic -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -49,7 +47,7 @@
 
             <!-- HOME -->
             <div class="col-md-1 p-0 nav-icon">
-                <a href="#home" class="border-0 p-0 bg-*">
+                <a href="#home" class="border-0 p-0 bg-*" alt="Inicio">
                     <div class="row">
                         <div class="col-md-12 text-center p-0">
                             <ion-icon class="aside-icons" name="home-outline"></ion-icon>
@@ -60,7 +58,7 @@
 
             <!-- PRODUCTS -->
             <div class="col-md-1 p-0 nav-icon">
-                <a href="#products" class="border-0 p-0 bg-*">
+                <a href="#products" class="border-0 p-0 bg-*" alt="Productos">
                     <div class="row">
                         <div class="col-md-12 text-center p-0">
                             <ion-icon class="aside-icons" name="bag-outline"></ion-icon>
@@ -69,9 +67,9 @@
                 </a>
             </div>
 
-            <!-- SERVICES -->
+            <!-- CONTACTO -->
             <div class="col-md-1 p-0 nav-icon">
-                <a href="#services" class="border-0 p-0 bg-*">
+                <a href="#services" class="border-0 p-0 bg-*" alt="Contacto">
                     <div class="row">
                         <div class="col-md-12 text-center p-0">
                             <ion-icon class="aside-icons" name="qr-code-outline"></ion-icon>
@@ -82,7 +80,7 @@
 
             <!-- ABOUT -->
             <div class="col-md-1 p-0 nav-icon">
-                <a href="#about" class="border-0 p-0 bg-*">
+                <a href="#about" class="border-0 p-0 bg-*" aria-placeholder="Acerca">
                     <div class="row">
                         <div class="col-md-12 text-center p-0">
                             <ion-icon class="aside-icons" name="code-slash-outline"></ion-icon>
@@ -100,18 +98,19 @@
                     <div class="header-custom-section">
                         <div class="header-content">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 p-0">
                                     <div class="custom-header-card card text-start px-3 py-2">
                                         <h3 class="card-title">HV Devs</h3><br>
                                         <h4 class="card-subtitle mb-2 text-muted">Developing desde el Alto Valle RNyNQN</h4>
-                                        <p class="card-text">HV Devs es una empresa de Neuquen y Rio Negro orientada al desarrollo de software de calidad para pequeños y medianos emprendedores.</p><br>
+                                        <p class="card-text">HV Devs es una empresa de Neuquen y Rio Negro orientada al desarrollo de software de calidad para pequeños y medianos emprendedores.</p> <br class="separator">
                                         <p class="card-text">Ofrecemos soluciones que colaboran a informatizar y digitalizar tus emprendimientos usando tecnologias de punta para innovar en cualquier mercado.
-                                        </p><br>
-                                        <p>No dudes en consultar para conocer nuestros servicios!</p>
-                                        <div class="card-footer-center">
-                                            <a href="#" id="">Conocer mas</a>
+                                        </p><br class="separator">
+                                        <p class="mb-2">No dudes en consultar para conocer nuestros servicios!</p>
+                                       
 
-                                        </div>
+                                    </div>
+                                    <div class="card-footer-center">
+                                        <a href="#" id="">Conocer mas</a>
 
                                     </div>
                                 </div>
@@ -134,7 +133,7 @@
                                 <div class="col-md-12 p-0">
                                     <div class="products-slide">
                                         <div class="row">
-                                            <div class="col-md-7 md:col-md-12 p-4 h-100 product-text">
+                                            <div class="col-md-7 md:col-md-12 h-100 product-text">
                                                 <div class="card-body h-100">
                                                     <h3 class="card-title product-text-title">Diseño y desarrollo web</h3>
                                                     <h4 class="card-subtitle product-text-subtitle mb-2 text-muted">Landing Pages, E-Commerce & WebApps</h4>
@@ -144,16 +143,65 @@
                                                     <h5 class="card-subtitle product-text-subtitle mb-2 text-muted">
                                                         Entre nuestros productos podras encontrar:
                                                     </h5>
-                                                    <ul class="list-group product-custom-ul">
+                                                    <!-- accordion -->
+                                                    <div class="accordion" id="products-acc">
 
-                                                        <!-- Landing Page -->
-                                                        <li class="list-group-item li-custom-list">
-                                                            <strong>Landing page informativa</strong>, para presentar tu emprendimiento, y tambien difundir tus medios de comunicacion. Te la diseñamos a medida, tal y como siempre la soñaste!
-                                                        </li>
+                                                        <!-- first item -->
+                                                        <div class="accordion-item">
 
-                                                        <!-- E-Commerce -->
-                                                        <li class="list-group-item li-custom-list">
-                                                            <strong>Tienda Online</strong>, La desplegamos como quieras:<br>
+                                                            <!-- title -->
+                                                            <h5 class="accordion-header" id="heading-1">
+                                                                <!-- button -->
+                                                                <button 
+                                                                class="accordion-button px-3 py-1" 
+                                                                type="button" 
+                                                                data-bs-toggle="collapse" 
+                                                                data-bs-target="#product-1"
+                                                                aria-expanded="false"
+                                                                aria-controls="product-1">
+                                                                Landing page informativa
+                                                            </h5>
+                                                            <!-- content -->
+                                                            <div 
+                                                            id="product-1" 
+                                                            class="accordion-collapse collapse show"
+                                                            style="font-size: 14px; font-weight:200"
+                                                            aria-labelledby="heading-1"
+                                                            data-bs-parent="#products-acc">
+                                                                <!-- body -->
+                                                                <div class="accordion-body px-3 py-1">
+                                                                    Para presentar tu emprendimiento, y tambien difundir tus medios de comunicacion. Te la diseñamos a medida, tal y como siempre la soñaste!
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- second item -->
+                                                        <div class="accordion-item">
+
+                                                        <!-- title -->
+                                                        <h5 class="accordion-header" id="heading-2">
+                                                            <!-- button -->
+                                                            <button 
+                                                            class="accordion-button px-3 py-1" 
+                                                            type="button" 
+                                                            data-bs-toggle="collapse" 
+                                                            data-bs-target="#product-2"
+                                                            aria-expanded="false"
+                                                            aria-controls="product-2">
+                                                            Tienda Online
+                                                        </h5>
+
+                                                        <!-- content -->
+                                                        <div 
+                                                        id="product-2" 
+                                                        class="accordion-collapse collapse"
+                                                        style="font-size: 14px; font-weight:200"
+                                                        aria-labelledby="heading-2"
+                                                        data-bs-parent="#products-acc">
+                                                            <!-- body -->
+                                                            <div class="accordion-body px-3 py-1">
+                                                                La desplegamos como quieras:<br>
                                                             <ul>
                                                                 <li class="mt-1"><strong>Tienda tipo Nube:</strong> Te ayudamos en el proceso de adquirir el mejor proveedor, te vinculamos las plataformas de pago que necesites, y ademas te ayudamos con la asignacion de
                                                                     tu dominio, carga de productos, cambiar los estilos, colores, etc.</li>
@@ -161,22 +209,48 @@
                                                                     plataformas de pago, publicidad, carrito, envios, en fin todo lo que necesites... Tambien te dejamos abierta la posibilidad de asociar una aplicacion movil, que inclusive te podemos desarrollar
                                                                     nosotros mismos. Si, somos lo que necesitas en tu negocio! </li>
                                                             </ul>
+                                                            </div>
 
-                                                        </li>
+                                                        </div>
+                                                        </div>
 
-                                                        <!-- Web Apps -->
-                                                        <li class="list-group-item li-custom-list">
-                                                            <strong>¿Otro tipo de Web App?</strong>, no hay problema. Relevamos tus necesidades y te armamos algo a medida. Necesitas controlar el stock de tu negocio? Registrar tus ingresos y egresos? Queres
-                                                            identificar tus productos con QR? Necesitas que una computadora haga todo por vos??, ni un drama, todo se puede!
-                                                        </li>
-                                                    </ul>
+                                                        <!-- third item -->
+                                                        <div class="accordion-item">
 
+                                                        <!-- title -->
+                                                        <h5 class="accordion-header" id="heading-3">
+                                                            <!-- button -->
+                                                            <button 
+                                                            class="accordion-button px-3 py-1" 
+                                                            type="button" 
+                                                            data-bs-toggle="collapse" 
+                                                            data-bs-target="#product-3"
+                                                            aria-expanded="false"
+                                                            aria-controls="product-3">
+                                                            ¿Otro tipo de Web App?
+                                                        </h5>
+
+                                                        <!-- content -->
+                                                        <div 
+                                                        id="product-3" 
+                                                        class="accordion-collapse collapse"
+                                                        style="font-size: 14px; font-weight:200"
+                                                        aria-labelledby="heading-3"
+                                                        data-bs-parent="#products-acc">
+                                                            <!-- body -->
+                                                            <div class="accordion-body px-3 py-1">
+                                                                No hay problema. Relevamos tus necesidades y te armamos algo a medida. Necesitas controlar el stock de tu negocio? Registrar tus ingresos y egresos? Queres
+                                                                identificar tus productos con QR? Necesitas que una computadora haga todo por vos??, ni un drama, todo se puede!
+                                                            </div>
+
+                                                        </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-5 text-center product-image-container">
-                                                <img class="product-image" src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                            <img class="product-image" src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +264,7 @@
                                 <div class="col-md-12 p-0">
                                     <div class="products-slide">
                                         <div class="row">
-                                            <div class="col-md-7 md:col-md-12 p-4 h-100 product-text">
+                                            <div class="col-md-7 md:col-md-12 h-100 product-text">
                                                 <div class="card-body h-100">
                                                     <h3 class="card-title product-text-title">Diseño y desarrollo de aplicaciones moviles</h3>
                                                     <h4 class="card-subtitle product-text-subtitle mb-2 text-muted">Android & iOS</h4>
@@ -200,35 +274,130 @@
                                                     <h5 class="card-subtitle product-text-subtitle mb-2 text-muted">
                                                         Entre nuestros productos podras encontrar:
                                                     </h5>
-                                                    <ul class="list-group product-custom-ul">
 
-                                                        <!-- Landing Page -->
-                                                        <li class="list-group-item li-custom-list">
-                                                            <strong>Diseño de Interfaz de Usuario (UI)</strong>, Te diseñamos tu app como la necesites, usando los mejores paquetes y las mejores practicas para que quede genial. Tambien armamos tu modelos
-                                                            de datos, y estructuramos la navegacion entre pantallas.
-                                                        </li>
+                                                    <div class="accordion mb-2" id="products-acc2">
 
-                                                        <!-- E-Commerce -->
-                                                        <li class="list-group-item li-custom-list">
-                                                            <strong>Tienda Online</strong>, La desplegamos como quieras:<br>
-                                                            <ul>
-                                                                <li class="mt-1"><strong>Tienda tipo Nube:</strong> Te ayudamos en el proceso de adquirir el mejor proveedor, te vinculamos las plataformas de pago que necesites, y ademas te ayudamos con la asignacion de
-                                                                    tu dominio, carga de productos, cambiar los estilos, colores, etc.</li>
-                                                                <li class="mt-1"><strong>Tienda desde cero:</strong> Te armamos tu propia aplicacion web desde cero, la vinculamos a base datos, establecemos el servicio de autenticacion. Configuramos la carga de prodcutos,
-                                                                    plataformas de pago, publicidad, carrito, envios, en fin todo lo que necesites... Tambien te dejamos abierta la posibilidad de asociar una aplicacion movil, que inclusive te podemos desarrollar
-                                                                    nosotros mismos. Si, somos lo que necesitas en tu negocio! </li>
-                                                            </ul>
+                                                        <!-- first item -->
+                                                        <div class="accordion-item">
 
-                                                        </li>
+                                                            <!-- title -->
+                                                            <h5 class="accordion-header" id="heading-4">
+                                                                <!-- button -->
+                                                                <button 
+                                                                class="accordion-button px-3 py-1" 
+                                                                type="button" 
+                                                                data-bs-toggle="collapse" 
+                                                                data-bs-target="#product-4"
+                                                                aria-expanded="false"
+                                                                aria-controls="product-4">
+                                                                Diseño de Interfaz de Usuario (UI)
+                                                            </h5>
+                                                            <!-- content -->
+                                                            <div 
+                                                            id="product-4" 
+                                                            class="accordion-collapse collapse show"
+                                                            style="font-size: 14px; font-weight:200"
+                                                            aria-labelledby="heading-4"
+                                                            data-bs-parent="#products-acc2">
+                                                                <!-- body -->
+                                                                <div class="accordion-body px-3 py-1">
+                                                                    Te diseñamos tu app como la necesites, usando los mejores paquetes y las mejores practicas para que quede genial. Tambien armamos tu modelos
+                                                                    de datos, y estructuramos la navegacion entre pantallas.
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-                                                        <!-- Web Apps -->
-                                                        <li class="list-group-item li-custom-list">
-                                                            <strong>¿Otro tipo de Web App?</strong>, no hay problema. Relevamos tus necesidades y te armamos algo a medida. Necesitas controlar el stock de tu negocio? Registrar tus ingresos y egresos? Queres
-                                                            identificar tus productos con QR? Necesitas que una computadora haga todo por vos??, ni un drama, todo se puede!
-                                                        </li>
-                                                    </ul>
+                                                        <!-- second item -->
+                                                        <div class="accordion-item">
 
+                                                        <!-- title -->
+                                                        <h5 class="accordion-header" id="heading-5">
+                                                            <!-- button -->
+                                                            <button 
+                                                            class="accordion-button px-3 py-1" 
+                                                            type="button" 
+                                                            data-bs-toggle="collapse" 
+                                                            data-bs-target="#product-5"
+                                                            aria-expanded="false"
+                                                            aria-controls="product-5">
+                                                            Queres conectar tu base de datos a una app?
+                                                        </h5>
+
+                                                        <!-- content -->
+                                                        <div 
+                                                        id="product-5" 
+                                                        class="accordion-collapse collapse"
+                                                        style="font-size: 14px; font-weight:200"
+                                                        aria-labelledby="heading-5"
+                                                        data-bs-parent="#products-acc2">
+                                                            <!-- body -->
+                                                            <div class="accordion-body px-3 py-1">
+                                                                Te creamos las conexiones que necesites a tu base de datos actual, podras visualizar tus ingresos, tu stock o lo que necesites visualizar. Usamos tecnologia multiplataforma para bases SQL y NoSQL.
+                                                            </div>
+
+                                                        </div>
+                                                        </div>
+
+                                                        <!-- third item -->
+                                                        <div class="accordion-item">
+
+                                                            <!-- title -->
+                                                            <h5 class="accordion-header" id="heading-6">
+                                                                <!-- button -->
+                                                                <button 
+                                                                class="accordion-button px-3 py-1" 
+                                                                type="button" 
+                                                                data-bs-toggle="collapse" 
+                                                                data-bs-target="#product-6"
+                                                                aria-expanded="false"
+                                                                aria-controls="product-6">
+                                                                Necesitas migrar de sistema operativo, o clonar a otro sistema?
+                                                            </h5>
+
+                                                            <!-- content -->
+                                                            <div 
+                                                            id="product-6" 
+                                                            class="accordion-collapse collapse"
+                                                            style="font-size: 14px; font-weight:200"
+                                                            aria-labelledby="heading-6"
+                                                            data-bs-parent="#products-acc2">
+                                                                <!-- body -->
+                                                                <div class="accordion-body px-3 py-1">
+                                                                    Si ya contas con una aplicacion Android y queres pasarte a iOS o viceversa, o tal vez tenes tu aplicacion solo en una de esas plataformas y queres crear la misma en otra, conta con ello. Trabajamos con tecnologia multiplataforma (Flutter) para mejorar ese tipo de aplicaciones
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container mobile-tech text-center">
+                                                        <div class="rounded" style="height: 100px; max-width: 99%; background-color: rgba(34,34,34,0.1);">
+                                                            <div class="container px-2">
+                                                                <div class="row gx-2">
+    
+                                                                    <div class="col">
+                                                                        <div class="p-2 text-center">
+                                                                            <ion-icon name="logo-apple" class="product-logos"></ion-icon>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    <div class="col">
+                                                                        <div class="p-2 text-center">
+                                                                            <ion-icon name="logo-android" class="product-logos"></ion-icon>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    <div class="col">
+                                                                        <div class="p-2 text-center">
+                                                                            <ion-icon name="logo-firebase" class="product-logos"></ion-icon>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                
                                             </div>
                                             <div class="col-md-5 text-center product-image-container">
                                                 <img class="product-image" src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
@@ -246,7 +415,7 @@
                                 <div class="col-md-12 p-0">
                                     <div class="products-slide">
                                         <div class="row">
-                                            <div class="col-md-7 md:col-md-12 p-4 h-100 product-text">
+                                            <div class="col-md-8 md:col-md-12 h-100 product-text">
                                                 <div class="card-body h-100">
                                                     <h3 class="card-title product-text-title">Diseño y desarrollo de aplicaciones moviles</h3>
                                                     <h4 class="card-subtitle product-text-subtitle mb-2 text-muted">Android & iOS</h4>
@@ -279,8 +448,8 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-5 text-center product-image-container">
-                                                <img class="product-image" src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                            <div class="col-md-4 text-center product-image-container">
+                                                <img class="product-image" src="https://images.pexels.com/photos/6963098/pexels-photo-6963098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                                             </div>
 
                                         </div>
@@ -291,7 +460,92 @@
                     </div>
                     <div class="products-bottom-overlay"></div>
                 </div>
-                <div class="section" id=""></div>
+                <div class="section contact-section text-center" id="">
+                    <div class="container p-4 mt-4 text-center">
+                        <div class="row">
+                            <div class="col-md-12 p-0">
+                                <div class="products-slide contact-slide">
+                                    <div class="row">
+                                        <div class="col-md-12 py-2 px-4 text-center">
+                                            <h2>Contactanos</h2>
+                                            <h4 class="px-4 text-start">Estamos para ayudarte, no dudes en enviarnos un mensaje por alguno de nuestros distintos medios</h4>
+                                        </div>
+                                        <div class="col-md-6 ps-2 py-0 m-w-100">
+                                            <div class="container">
+                                                <div class="row text-start gy-3">
+
+                                                    <!-- direccion -->
+                                                    <div class="col-1 text-center p-0">
+                                                        <ion-icon name="location-outline" size="large"></ion-icon>
+                                                    </div>
+                                                    <div class="col-11 text-start p-0">
+                                                        <h6 class="m-0 pt-2"><a style="text-decoration: none; color: #fff" target="_blank" href="https://www.google.com/maps/place/Centro+de+Educaci%C3%B3n+T%C3%A9cnica+N%C2%B015/@-38.9280585,-67.9823068,16z/data=!4m8!1m2!2m1!1salto+valle+!3m4!1s0x960a30936d92cea1:0xb71ea55a3fd42a48!8m2!3d-38.9280588!4d-67.9740672">Alto Valle, Rio Negro y Neuquen, Patagonia argentina</a></h6>
+                                                    </div>
+
+                                                    <!-- telefono -->
+                                                    <div class="col-1 text-center p-0">
+                                                        <ion-icon name="call-outline" size="large"></ion-icon>
+                                                    </div>
+                                                    <div class="col-11 text-start p-0">
+                                                        <h6 class="m-0 pt-2"><a href="" type="telephone" target="_blank" style="text-decoration: none; color: #fff">+54 299 5110040</a></h6>
+                                                    </div>
+
+                                                    <!-- email -->
+                                                    <div class="col-1 text-center p-0">
+                                                        <ion-icon name="mail-outline"  size="large"></ion-icon>
+                                                    </div>
+                                                    <div class="col-11 text-start p-0">
+                                                        <h6 class="m-0 pt-2"><a target="_blank" href="mailto:info@hvdevs.com.ar" type="email" style="text-decoration: none; color: #fff">info@hvdevs.com.ar</a></h6>
+                                                    </div>
+
+                                                    
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <h5>Tambien buscanos en nuestras redes!</h5>
+                                                    <div class="col-12 text-start">
+                                                        <div class="row gx-2 mt-4 px-5 social-media">
+                                                            <div class="col text-center">
+                                                                <a href="#"><ion-icon class="sm-icon sm-icon-fb" name="logo-facebook"  ></ion-icon></a>
+                                                            </div>
+                                                            <div class="col text-center">
+                                                                <a href="#"><ion-icon class="sm-icon sm-icon-lkdn" name="logo-linkedin"  ></ion-icon></a>
+                                                            </div>
+                                                            <div class="col text-center">
+                                                                <a href="#"><ion-icon class="sm-icon sm-icon-gh" name="logo-github"    ></ion-icon></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-4 py-0 m-w-100">
+                                            <div class="container text-start p-2 contact-form">
+                                                <h5>Dejanos tu mesaje!</h5>
+                                                <form action="submit">
+                                                    <div class="inputBox">
+                                                        <input placeholder="Nombre" type="text" required="required">
+                                                        <span>Nombre</span>
+                                                    </div>
+
+                                                    <div class="inputBox">
+                                                        <input placeholder="Telefono" type="email" required="required">
+                                                        <span>Telefono</span>
+                                                    </div>
+
+                                                    <div class="inputBox inputMessage">
+                                                        <input placeholder="Mensaje" type="text" class="m-0">
+                                                        <span>Mensaje</span>
+                                                    </div>
+                                                </form>
+                                                <button class="send-btn">Enviar!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="section" id=""></div>
             </div>
         </div>
@@ -299,15 +553,11 @@
 
     </div>
     <script type="module" src="./js/index.js"></script>
-    <script>
-        const accordion = document.getElementsByClassName('acc-contentBx');
 
-        for (i = 0; i < accordion.length; i++) {
-            accordion[i].addEventListener('click', function() {
-                this.classList.toggle('active')
-            })
-        }
-    </script>
+     <!-- importamos los scripts de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
