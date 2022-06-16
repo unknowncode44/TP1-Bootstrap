@@ -52,8 +52,6 @@ body {
     margin-top: 1rem !important;
 }
 
-
-
 @media only screen and (max-width: 770px) {
     .nav-icon {
         display: none;
@@ -82,17 +80,16 @@ body {
     .custom-header-card p {
         font-size: 16px !important;
         font-weight: 200 !important;
-        
     }
     .card-footer-center a {
         position: absolute;
         top: 0;
     }
-
-    .separator{
+    .separator {
         display: none;
     }
 }
+
 @media only screen and (min-width: 1920px) {
     .custom-header-card p {
         font-size: 22px !important;
@@ -102,7 +99,6 @@ body {
         position: absolute;
         top: 0;
     }
-
     .custom-header-card {
         padding: 1rem !important;
         max-height: 60vh !important;
@@ -113,7 +109,6 @@ body {
     .rocket-container {
         display: none !important;
     }
-
     .mobile-tech {
         display: none;
     }
@@ -345,17 +340,14 @@ body {
     .product-text {
         padding: 0 !important;
     }
-
     .product-text-title {
         font-size: 24px !important;
         font-weight: 400;
     }
-    
     .product-text-subtitle {
         font-size: 18px !important;
         font-weight: 400;
     }
-    
     .product-text-text {
         font-size: 14px !important;
         font-weight: 200 !important;
@@ -364,30 +356,24 @@ body {
         font-size: 14px;
         font-weight: 200;
     }
-    .product-image-container{
+    .product-image-container {
         max-height: 80vh !important;
     }
-
     .custom-burst {
         bottom: -150px;
         height: 150px;
     }
-    
-    
-
 }
 
-@media only screen and (min-width: 1920px){
+@media only screen and (min-width: 1920px) {
     .product-text-title {
         font-size: 30px !important;
         font-weight: 400;
     }
-    
     .product-text-subtitle {
         font-size: 24px !important;
         font-weight: 400;
     }
-    
     .product-text-text {
         font-size: 16px !important;
         font-weight: 200 !important;
@@ -396,6 +382,25 @@ body {
         font-size: 17px;
         font-weight: 200;
     }
+    .accordion-body {
+        font-size: 18px !important;
+    }
+    .accordion-button {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        font-size: 22px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .accordion-body {
+        font-size: 18px !important;
+    }
+    .accordion-button {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        font-size: 22px !important;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -403,7 +408,6 @@ body {
         height: fit-content;
         padding: 0;
     }
-    
     .product-image-container {
         display: none;
     }
@@ -470,10 +474,11 @@ body {
     background-image: url('../assets/chevron.svg') !important
 }
 
-.product-logos{
+.product-logos {
     height: 70px;
     width: 70px;
 }
+
 
 /* contact section */
 
@@ -493,7 +498,6 @@ body {
 .contact-slide h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    
 }
 
 .contact-slide h4 {
@@ -503,7 +507,6 @@ body {
 
 .social-media a {
     color: #fff;
-    
 }
 
 .social-media {
@@ -546,11 +549,10 @@ body {
     margin: 1rem;
 }
 
-.contact-form .inputMessage{
+.contact-form .inputMessage {
     position: relative;
     margin: 1rem;
 }
-
 
 .contact-form .inputBox input {
     position: absolute;
@@ -566,14 +568,14 @@ body {
     outline: none;
 }
 
-.inputMessage input{
+.inputMessage input {
     position: absolute;
     width: 100% !important;
     height: 6rem;
     padding-left: 10px;
 }
 
-.inputMessage input:last-child{
+.inputMessage input:last-child {
     width: 100% !important;
     height: 6rem;
     padding-left: 10px;
@@ -585,7 +587,7 @@ body {
     color: transparent;
 }
 
-.send-btn{
+.send-btn {
     position: absolute;
     bottom: 1.5rem;
     right: 1.75rem;
@@ -595,24 +597,35 @@ body {
     border-radius: 5px;
     color: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) !important;
-
 }
 
-.send-btn:hover{
-
+.send-btn:hover {
     background: rgba(255, 255, 255, 0.3) !important;
     padding: 5px 15px 5px 15px;
     color: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) !important;
-
 }
 
 
+/* current projects section */
 
+.current-projects {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 0, 153, 1) 0%, #8A2387 100%);
+}
 
+.project-1 {
+    min-height: 65vh !important;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4) !important;
+    background-image: linear-gradient(0deg, transparent 0%, #5a4fcf 74%);
+}
 
-
-
-
-
-
+.project-1:hover {
+    min-width: 60vw;
+    transition: 1.5s !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4) !important;
+    background-image: linear-gradient(180deg, transparent 0%, #5a4fcf 74%);
+}
